@@ -3,18 +3,17 @@ layout: default
 title: jekyllMeTimbers - Home
 ---
 
-<div id="home">
-  <h1>Posts</h1>
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-  </ul>
+<div class='jumbotron text-center'>
+	<div class='lion'>
+		<h2>Welcome to Nairobi.js!</h2>
+		<hr>
+	</div>
+	<p>Write Javascript like a lion... :)</p>
+	<button class='btn btn-success btn-lg'>Call to action!</button>
 </div>
-
-<div id='members'>
-	<h1>Members</h1>
-	{% for member in members %}
-		<p>{{member.name}}</p>
+<h1>Posts</h1>
+<ul class="posts">
+	{% for post in site.posts %}
+		<li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
 	{% endfor %}
-</div>
+</ul>
